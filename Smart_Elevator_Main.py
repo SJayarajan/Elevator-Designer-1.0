@@ -4,7 +4,7 @@
 #PROGRMING START ON 16/11/2021.
 #NO EARLIER REVISIONS.
 #NOTES:
-#Checked on 7/12/2021
+#Checked on 7/12/2021 and 27_1_2023
 #USED 3 NESTED LOOPS TO CALCULATE FOR VARIOUS SPEEDS
 #WAITING INTERVALS AND PASSENGER CAPACITY
 #ADDED A COMBO BOX FOR SELECTION OF PROJECT TYPE
@@ -22,14 +22,7 @@ from datetime import date
 ###VARIABLE ASSIGNMENT#
 
 
-
-
-
-
-
-
 ####START OF PROGRAM
-
 root=Tk()
 root.wm_title("Smart Elevator Calculator Ver 1.0 Nov 2021 Tata Realty and Infrastructure")
 root.resizable(0,0)
@@ -178,7 +171,7 @@ def Calc_Elevator(root):
     #DATA AREA
     Speed_Range=[0.75,1.0,1.5,1.75,2.0,2.5,3.0]
     Elev_Capacity=[6,8,12,16,18,20,24]
-    Waiting_Interval=[item for item in range(1,60,1)]
+    Waiting_Interval=[item for item in range(1,80,1)]
     Population = int(Entry.get(Ent2))
     Excel_WorkSheet.write(5, 0, "Site Population:"+str(Population), Style1)
     inc=1
